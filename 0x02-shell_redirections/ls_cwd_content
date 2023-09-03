@@ -1,0 +1,16 @@
+total 160
+drwxrwxr-x 2 qtri qtri 4096 Sep  3 21:36 .
+drwxrwxr-x 6 qtri qtri 4096 Sep  3 20:56 ..
+-rwxrwxr-x 1 qtri qtri   32 Aug  8 06:43 0-hello_world
+-rwxrwxr-x 1 qtri qtri   28 Aug  8 06:41 1-confused_smiley
+-rwxrwxr-x 1 qtri qtri   28 Aug  8 06:46 2-hellofile
+-rwxrwxr-x 1 qtri qtri   39 Aug  8 06:51 3-twofiles
+-rwxrwxr-x 1 qtri qtri   29 Aug  8 06:58 4-lastlines
+-rwxrwxr-x 1 qtri qtri   29 Aug  8 07:00 5-firstlines
+-rwxrwxr-x 1 qtri qtri   42 Sep  3 20:57 6-third_line
+-rwxrwxr-x 1 qtri qtri   77 Sep  3 21:25 7-file
+-rwxrwxr-x 1 qtri qtri   35 Sep  3 21:25 8-cwd_state
+-rw-rw-r-- 1 qtri qtri    5 Sep  3 20:55 .gitignore
+-rw-rw-r-- 1 qtri qtri  743 Sep  3 20:55 iacta
+-rw-rw-r-- 1 qtri qtri    0 Sep  3 21:36 ls_cwd_content
+-rw-rw-r-- 1 qtri qtri   27 Aug  8 06:35 README.md
