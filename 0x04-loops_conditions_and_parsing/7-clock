@@ -10,6 +10,6 @@ do
             echo $min_counter
             (( min_counter++ ))
         done
-        (( min_counter=0 ))
+        (( min_counter=1 ))
         (( hour_counter++ ))
 done
