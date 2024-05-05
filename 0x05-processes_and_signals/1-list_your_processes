@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # print process with user-oriented format
 #   show all processes
-#   including process with out tty
+#+  including process with out tty
 
 ps -afux
