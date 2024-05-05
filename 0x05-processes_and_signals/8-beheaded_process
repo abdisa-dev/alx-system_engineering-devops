@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# runnning process killer
+
+PROCESS=$(pgrep -f "7-highlander")
+kill -s SIGKILL "$PROCESS"
