@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# print process with user-oriented format
+# print process for program bash
 # shellcheck disable=SC2009
 
 ps -axuf | grep bash

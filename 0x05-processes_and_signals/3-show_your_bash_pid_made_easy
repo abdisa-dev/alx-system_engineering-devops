@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# print bash program process with pgrep
+
+pgrep -l bash
