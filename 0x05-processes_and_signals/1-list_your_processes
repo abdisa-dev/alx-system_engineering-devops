@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#print process with user-oriented format
+# print process with user-oriented format
 
 ps -axuf
