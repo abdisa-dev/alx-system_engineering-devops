@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# list all listing sockets (ip:port) with PID and program name
+netstat -lp
