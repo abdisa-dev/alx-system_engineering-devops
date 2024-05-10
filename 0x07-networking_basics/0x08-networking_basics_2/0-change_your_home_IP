@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Changing host name
+cp /etc/hosts ~/hosts.new
+sed -r -i "s/localhost\s+127\..+?/localhost\t127.0.0.2/" ~/hosts.new
+echo -e "facebook.com\t8.8.8.8" >> ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
