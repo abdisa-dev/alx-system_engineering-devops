@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# config file for ssh to auth without pass
+Host *
+    IdentifiedFile ~/.ssh/school
+    PasswordAuthentication no
