@@ -1,5 +1,14 @@
-# setup client SSH configuration
+# Setting up my client config file
+include stdlib
 
-exec { 'echo "PasswordAuthentication no\nIdentityFile ~/.ssh/school" >> /etc/ssh/ssh_config':
-        path => '/bin/bash'
+file_line { '/etc/ssh/ssh_config':
+  ensure  => present,
+  line    => '    PasswordAuthentication no',
+  replace => true,
+}
+
+file_line { '/etc/ssh/ssh_config':
+  ensure  => present,
+  line    => '     IdentityFile ~/.ssh/school',
+  replace => true,
 }
