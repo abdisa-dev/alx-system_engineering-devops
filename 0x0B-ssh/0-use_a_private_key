@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# establish ssh connection to ubuntu user
 ssh -i ~/.ssh/school ubuntu
