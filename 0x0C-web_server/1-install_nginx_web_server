@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ssh ubuntu@54.157.171.99 sudo apt install -y nginx && sudo service nginx start
