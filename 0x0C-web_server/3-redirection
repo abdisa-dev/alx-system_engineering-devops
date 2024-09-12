@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Installs nginx server
+
+sudo apt -y update
+sudo apt -y install nginx 
+ufw allow 'Nginx HTTP'
+
+echo "Hello World!\n" > /var/www/html/index.html
+
+SERVER=\
+"server {
+    listen 80 default_server;
+    root /var/www/html;
+
+    rewrite ^/redirect htps://abdisa.tech;
+
+    location /redirect {
+        return 301 https://abdisa.tech;
+    }
+}"
+
+echo -e "$SERVER" > "/etc/nginx/site-enabled/default"
+nginx -s reload
