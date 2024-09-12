@@ -12,12 +12,11 @@ SERVER=\
     listen 80 default_server;
     root /var/www/html;
 
-    rewrite ^/redirect https://abdisa.tech;
-
     location /redirect {
-        return 301;
+        return 301 https://abdisa.tech;
     }
 }"
 
-echo -e "$SERVER" > "/etc/nginx/site-enabled/default"
+echo -e "$SERVER" > "/etc/nginx/sites-enabled/default"
 nginx -s reload
+echo "DONE"
