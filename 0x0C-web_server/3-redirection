@@ -12,10 +12,10 @@ SERVER=\
     listen 80 default_server;
     root /var/www/html;
 
-    rewrite ^/redirect htps://abdisa.tech;
+    rewrite ^/redirect https://abdisa.tech;
 
     location /redirect {
-        return 301 https://abdisa.tech;
+        return 301;
     }
 }"
 
