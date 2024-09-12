@@ -5,7 +5,7 @@ sudo apt -y update
 sudo apt -y install nginx 
 ufw allow 'Nginx HTTP'
 
-echo "Hello World!\n" > /var/www/html/index.html
+echo -e "Hello World!\n" > /var/www/html/index.html
 
 SERVER=\
 "server {
