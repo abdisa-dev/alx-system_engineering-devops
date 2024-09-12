@@ -4,14 +4,15 @@
 sudo apt -y update
 sudo apt -y install nginx 
 ufw allow 'Nginx HTTP'
-
+sudo chmod -R 755 /var/www
 echo "Hello World!" > /var/www/html/index.html
 
 SERVER=\
 "server {
     listen 80 default_server;
+    listen [::]:80 default_server;
     root /var/www/html;
-
+    server_name _;
     location /redirect {
         return 301 https://abdisa.tech;
     }
