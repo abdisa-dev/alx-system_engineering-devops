@@ -13,7 +13,8 @@ SERVER=\
     listen [::]:80 default_server;
     root /var/www/html;
     server_name _;
-    location /redirect {
+    
+    location /redirect_me {
         return 301 https://abdisa.tech;
     }
 }"
