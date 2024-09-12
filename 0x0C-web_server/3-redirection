@@ -19,5 +19,8 @@ SERVER=\
 }"
 
 echo -e "$SERVER" > "/etc/nginx/sites-enabled/default"
-nginx -s reload
-echo "DONE"
+if [ "$(pgrep -c nginx)" -le 0 ]; then
+	service nginx start
+else
+	service nginx restart
+fi
