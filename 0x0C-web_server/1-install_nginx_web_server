@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# install nginx and start its demone
-ssh ubuntu@54.157.171.99 sudo su &&  apt install -y nginx && service nginx start
+# install nginx and start its
+ssh ubuntu@54.157.171.99 sudo apt install -y nginx
